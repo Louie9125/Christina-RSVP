@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>RSVP</title>
     <style>
       body {
@@ -112,7 +113,7 @@
       </div>
       <div class="rsvp-container">
         <h2>Η βάφτισή μου</h2>
-        <form id="rsvp-form" action="https://script.google.com/macros/s/AKfycbzW08BhllnEje6_225vJqaFPzSAVFSgk_gktSt5AWzDreBGbQyAygsoz7SoQnLZ0k64iQ/exec" method="POST">
+        <form id="rsvp-form" action="https://script.google.com/macros/s/AKfycby31mF_mydkDVa_PMGNugwc5-fmbwrPco1KOgr0t-pDEw8MSgOQMa23RsgX2e6KratHKA/exec" method="POST">
           <input type="hidden" name="_captcha" value="false">
 
           <label for="name">Ονοματεπώνυμο</label>
@@ -135,6 +136,7 @@
           <label for="phone">Τηλέφωνο Επικοινωνίας</label>
           <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
 
+          <div class="g-recaptcha" data-sitekey="6Ldo320sAAAAALHctDZlnQSF52DxeHkW9qAgo5xW"></div>
           <button type="submit" id="submit-btn">Αποθήκευση</button>
         </form>
       </div>
